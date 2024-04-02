@@ -37,10 +37,10 @@
         </div>
     @endif
     <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-light-danger"onclick="_show_motif({{ $devis->id }},{{ $member_id }})">
+        <button type="button" id="refuserButton" class="btn btn-sm btn-light-danger"onclick="_show_motif({{ $devis->id }},{{ $member_id }})">
             <i class="fa fa-times"></i> Refuser
         </button>
-        <button type="submit" class="btn btn-sm btn-primary">
+        <button type="submit" id="accepterButton" class="btn btn-sm btn-primary">
             <i class="fa fa-check"></i> Accepter <span id="BTN_SAVE_POINTAGE"></span>
         </button>
     </div>
@@ -48,6 +48,7 @@
 
 <script>
     function _show_motif(devis_id, member_id) {
+        document.getElementById('accepterButton').disabled = true;
         var modal_id = 'modal_show_motif';
         var modal_content_id = 'modal_show_motif_content';
         var spinner = '<div class="modal-body"><div class="spinner spinner-primary spinner-lg"></div></div>';
@@ -82,6 +83,7 @@
     $(document).ready(function() {
         $('#acceptFacture').submit(function(e) {
             e.preventDefault();
+            document.getElementById('refuserButton').disabled = true;
             var action_id = $('#af_id').val();
             var member_id = $('#member_id').val();
             _show_documents(2,action_id,member_id)

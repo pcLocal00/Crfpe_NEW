@@ -1067,6 +1067,28 @@ class FormationController extends Controller
     }
 
     public function showDownloadDocument($id,$af_id,$member_id){
+        $contact = Member::find($member_id)->contact;
+        $etat_id = 106;
+
+        $subTask = Task::where([
+            ['af_id',$af_id],
+            ['sub_task',1],
+            ['contact_id',$contact->id],
+        ])->latest()->first();
+
+        $task = Task::where([
+            ['af_id',$af_id],
+            ['sub_task',0],
+            ['contact_id',$contact->id],
+        ])->latest()->first();
+
+        if($task){
+            $task->update(['etat_id' => $etat_id ]);
+        }
+        if($subTask){
+            $subTask->update(['etat_id' => $etat_id ]);
+        }
+
         $member= Member::find($member_id);
 
         $contact_id= $member->contact->id;
@@ -1074,19 +1096,19 @@ class FormationController extends Controller
         $devis = Document::where([
             ['af_id', $af_id],
             ['contact_id', $contact_id],
-            ['state', 'devis']
+            ['type', 'devis']
         ])->latest()->first();
 
         $contrat = Document::where([
             ['af_id', $af_id],
             ['contact_id', $contact_id],
-            ['state', 'contrat']
+            ['type', 'contrat']
         ])->latest()->first();
 
         $facture = Document::where([
             ['af_id', $af_id],
             ['contact_id', $contact_id],
-            ['state', 'facture']
+            ['type', 'facture']
         ])->latest()->first();
 
         return view('pages.formation.devis.document',['id'=>$id,'devis'=>$devis,'contrat'=>$contrat,'facture'=>$facture]);

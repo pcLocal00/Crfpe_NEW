@@ -1561,7 +1561,7 @@ class ActionFormationController extends Controller
 
     public function formEnrollment($af_id, $row_id, $type)
     {
-        /* 
+        /*
             $type==1 ==> Inscription normale
             $type==2 ==> Fichier parcours sup
         */
@@ -1624,7 +1624,7 @@ class ActionFormationController extends Controller
                                         if (count($ids) > 0) {
                                             $deletedRows = $DbHelperTools->massDeletes($ids, 'member', 1);
                                         }
-                                        //contacts    
+                                        //contacts
                                         $contacts_ids = Contact::select('id')->where('entitie_id', $entity_id)->whereIn('id', $file_contact_ids)->pluck('id');
                                         // dd('hnaaa',$contacts_ids);
                                         if ($contacts_ids->count() > 0) {
@@ -1726,7 +1726,7 @@ class ActionFormationController extends Controller
                 if (count($unselectedStudentIds) > 0) {
                     foreach ($unselectedStudentIds as $id => $value) {
                         $rs_mb = DB::table('af_members')->select('id')->where([['contact_id', $value], ['enrollment_id', $enrollment_id]])->get();
-                        // dd($rs_mb,$enrollment_id,$value); 
+                        // dd($rs_mb,$enrollment_id,$value);
                         // dd($rs_mb,'hna',$value,$enrollment_id);
                         if (count($rs_mb) > 0) {
                             $deletedRows = $DbHelperTools->massDeletes($rs_mb, 'member', 1);
@@ -3049,7 +3049,7 @@ class ActionFormationController extends Controller
                                                             }else{
                                                                 $entityName = $sc->member->enrollment->entity->entity_type . ': ' . $sc->member->enrollment->entity->name . ' (' . $sc->member->enrollment->entity->ref . ')';
                                                             }
-                                                            
+
                                                             $spanEntity = ' <p class="text-info mb-0 ml-4"> (' . $entityName . ')</p>';
                                                             $member_name = ($sc->member->contact) ? ($sc->member->contact->firstname . ' ' . $sc->member->contact->lastname) : $sc->member->unknown_contact_name;
                                                             $textContact = $member_name.' - '.$entity_type;
@@ -3157,7 +3157,7 @@ class ActionFormationController extends Controller
         //         $sessions = Session::select('id','title','code')
         //         ->where('af_id', $af_id)->whereIn('id',$arr_sessions_ids)
         //         ->orderBy('started_at','asc')
-        //         ->get(); 
+        //         ->get();
         //     }else{
         //         $sessions = Session::select('id','title','code')
         //         ->where('af_id', $af_id)
@@ -3268,7 +3268,7 @@ class ActionFormationController extends Controller
                     ->select('id', 'title', 'code')
                     ->get();
         }
-        // dd($sessions);     
+        // dd($sessions);
         if (count($sessions) > 0) {
             foreach ($sessions as $session) {
                 //Session
@@ -4371,7 +4371,7 @@ class ActionFormationController extends Controller
                     return response()->json([
                         'success' => $success,
                         'msg' => $msg,
-                    ]); 
+                    ]);
                 } */
             }
             //dd($enrollment_id);
@@ -4467,12 +4467,12 @@ class ActionFormationController extends Controller
                         //     //aji hnaya
                         //     $totalCost=$DbHelperTools->getTotalPriceMembreFormer($contract_id);
                         //     $totalCost=number_format($totalCost,2). ' €';
-                        // } 
+                        // }
                     }
                 }
             }
 
-            
+
             if ($d->contact->type_former_intervention == "Sur facture") {
                 $btn_devis = '<br/><button class="btn btn-sm btn-clean btn-icon" onclick="_selection_af(' . $d->id . ')" title="Demande de devis">
                 <i class="' . $tools->getIconeByAction('ENVELOPE') . '"></i>
@@ -4482,13 +4482,16 @@ class ActionFormationController extends Controller
             }
 
             $document = Document::where([['contact_id', $d->contact->id],['state',0]])->latest()->first();
-            if ( $document && $document->type == 'devis') {
+            $subtasks = Task::where([['af_id',$af_id],['sub_task',1],['contact_id',$d->contact->id],])->get();
+            $task = Task::where([['af_id',$af_id],['sub_task',0],['contact_id',$d->contact->id],['etat_id',106]])->get();
+            $count = count($subtasks);
+            if ( $document && $document->type == 'devis' && $count<2 ) {
                 $btn_devis_recue = '<br/><button class="btn btn-sm btn-clean btn-icon" onclick="_selection_document(' . $document->id. ',' . $d->id .',1)" title="Demande de devis">
                 <i class="' . $tools->getIconeByAction('ENVELOPE') . ' envelope-icon" id="envelopeButton" ></button>';
-            } else if($document && $document->type == 'contrat'){
+            } else if($document && $document->type == 'contrat'  && $count<3){
                 $btn_devis_recue = '<br/><button class="btn btn-sm btn-clean btn-icon" onclick="_selection_document(' . $document->id. ',' . $d->id .',2)" title="Demande de contrat">
                 <i class="' . $tools->getIconeByAction('ENVELOPE') . ' envelope-icon-2" id="envelopeButtontwo" ></button>';
-            } else if($document && $document->type == 'facture'){
+            } else if($document && $document->type == 'facture'&& !$task){
                 $btn_devis_recue = '<br/><button class="btn btn-sm btn-clean btn-icon" onclick="_selection_document(' . $document->id. ',' . $d->id .',3)" title="Demande de facture">
                 <i class="' . $tools->getIconeByAction('ENVELOPE') . ' envelope-icon-3" id="envelopeButtonThree" ></button>';
             }
@@ -4769,8 +4772,8 @@ class ActionFormationController extends Controller
                             $rsCheck = $DbHelperTools->checkIfRessourceAvailableToSchedule($ressource_id, $schedule_id);
 
                             //    dd($rsCheckParent,$can_be_scheduled,$ressource_id,$schedule_id,$rsCheck);
-                            // 
-                            // 
+                            //
+                            //
                             // dd($rsCheck);
 
                             $toschedule = $rsCheck['toschedule'];
@@ -4891,7 +4894,7 @@ class ActionFormationController extends Controller
 
 
 
-        //dd($r);            
+        //dd($r);
         $sessions = Session::where('af_id', $af_id)->whereIn('id', $ids_sessions)->get();
         if (count($sessions) > 0) {
             foreach ($sessions as $session) {
@@ -6075,7 +6078,7 @@ class ActionFormationController extends Controller
         }
         if ($render_type == 3) {
         }
-        //return true; 
+        //return true;
         return $pdf->download($contract->number . '-' . time() . '.pdf');
     }
 
@@ -7454,7 +7457,7 @@ class ActionFormationController extends Controller
 
     public function getJsonTimeStructure($id_selected, $param, $is_eval = false)
     {
-        /* 
+        /*
         $param==0 ==> display normal
         $param==1 ==> display in modal
         */
@@ -7866,7 +7869,7 @@ class ActionFormationController extends Controller
 
     public function getJsonTimeMembersStructure(Request $request, $id_selected)
     {
-        /* 
+        /*
         $param==0 ==> display normal
         $param==1 ==> display in modal
         */
