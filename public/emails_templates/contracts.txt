@@ -1,0 +1,8 @@
+<p>Bonjour,</p>
+<p>Un ou plusieurs contrats de travail sont disponibles dans votre espace Solaris et attendent votre signature électronique.</p>
+<p>Vous pouvez accéder à votre espace Solaris du CRFPE à l’adresse suivante : <a href="https://solaris-crfpe.fr">solaris-crfpe.fr</a> .</p>
+<p>Pour rappel votre identifiant est le mail que nous avons enregistré dans notre base de données et le mot de passe est celui que vous avez choisi. Lors de votre première connexion, vous devez cliquer sur « Mot de passe oublié ». En effet, pour des questions de RGPD, le CRFPE ne stocke pas vos mots de passe.</p>
+<p>Vos ou vos contrats se trouveront dans le rubrique « AF & Sessions », rubrique « AF » puis cliquez sur « Détails » dans la colonne « Actions » (icône feuille) puis « Documents de l’AF » et enfin le bouton « Action ».</p>
+<p>Vous pourrez cliquer sur le bouton « Signer ». Cela entrainera automatiquement la génération d’un mail que nous vous invitons à consulter. Ce mail proviendra du logiciel Adobe. Dans ce mail, vous trouverez le lien pour signer votre contrat. Cette sécurité, imposée par Adobe signature, permet de s’assurer que vous êtes bien le signataire du contrat.</p>
+<p>N’oubliez pas, après votre intervention, de valider votre présence lors de la formation que vous avez animée car sinon nous ne pourrons pas vous rémunérer. Vous pouvez le valider dans l’onglet « Planification » et l’icône « Pointage » </p>
+<p>Pour rappel, toute intervention se déroulant après le 20 du mois sera rémunérée sur la paie du mois suivant.</p>

@@ -1,0 +1,130 @@
+<!-- Header -->
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td style="text-align:center;">
+                <img height="80px" src="{LOGO_HEADER}" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- Content -->
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td colspan="2"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:16px;">
+                <p style="text-transform: uppercase;">
+                    <strong>{COMPANY_NAME}</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                <p style="margin: 0px;">{COMPANY_ADDRESS_LINE_1}</p>
+                <p style="margin: 0px;">CS {COMPANY_CS}</p>
+                <p style="margin: 0px;">{COMPANY_ZIPCODE} {COMPANY_CITY} CEDEX</p>
+                <p style="margin: 0px;">Tel : {COMPANY_PHONE}</p>
+                <p style="margin: 0px;">{COMPANY_INVOICE_EMAIL}</p>
+                <p style="margin: 0px;">N° SIRET : {COMPANY_SIRET} / Code APE : {COMPANY_CODE_APE}</p>
+                <p style="margin: 0px;">N° de déclaration d’activité : {COMPANY_ACTIVITY_DECLARATION_NUMBER}</p>
+                <p style="margin: 0px;">Auprès de la Préfecture du Nord</p>
+            </td>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;text-align:right;">
+                <div style="border:0.5px solid #000;width: 230px;height: 160px;padding: 6px;text-align: left;float: right;">
+                    <p style="font-size:12px;">A l’attention de {INVOICE_CONTACT_FIRSTNAME} {INVOICE_CONTACT_LASTNAME}</p>
+                    <p style="font-size:12px;">{INVOICE_ENTITY}</p>
+                    <p style="font-size:12px;">{INVOICE_ADDRESS_LINE1}</p>
+                    <p style="font-size:12px;">{INVOICE_ADDRESS_LINE2}</p>
+                    <p style="font-size:12px;">{INVOICE_POSTAL_CODE} {INVOICE_CITY}</p>
+                    <br>
+                    <p style="font-size:12px;">{INVOICE_SIRET_CLIENT}</p>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;margin-top: 20px;">
+    <tbody>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                Date : {DATE_NOW}
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                Votre contact : {INVOICE_WRITER_NAME} / {INVOICE_WRITER_EMAIL}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;background-color: #e4e1e1;margin-top: 10px;margin-bottom: 10px;">
+    <tbody>
+        <tr>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:14px;text-align: center;">
+                <strong>AVOIR N° {REFUND_NUMBER} SUR FACTURE N° {INVOICE_NUMBER}</strong>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">{REFUND_NOTE}</p>
+<table id="INVOICE_ITEMS"
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;border: 1px solid black;border-collapse: collapse;">
+    <thead>
+        <tr style="border:0.5px solid #000;">
+            <th style="border:0.5px solid #000;border-collapse: collapse;">DESIGNATION</th>
+            <th style="border:0.5px solid #000;border-collapse: collapse;">QUANTITE</th>
+            <th style="border:0.5px solid #000;border-collapse: collapse;">PRIX UNITAIRE</th>
+            <th style="border:0.5px solid #000;border-collapse: collapse;">TOTAL NET</th>
+        </tr>
+    </thead>
+    <tbody>
+        {HTML_ITEMS}
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                    <strong>L'avoir émis n’est pas soumis à la TVA (art. 261-7-1 du CGI)</strong>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                <p>Version : mars 2021 - {COMPANY_WEBSITE}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<!-- FOOTER -->
+<table>
+    <tbody>
+        <tr>
+            <td style="width:4cm;"> <img width="280px" src="{LOGO_FOOTER}"> </td>
+            <td style="width:9.4cm;">
+                <p class="footer-text">{ADRESS_FOOTER}</p>
+                <p class="footer-text">Tél : {PHONE_FOOTER} • Fax : {FAX_FOOTER}</p>
+                <p class="footer-text">{EMAIL_FOOTER} • {WEBSITE_FOOTER}</p>
+                <p class="footer-text">Siret {SIRET_FOOTER}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>

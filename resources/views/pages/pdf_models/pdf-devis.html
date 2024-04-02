@@ -1,0 +1,318 @@
+<!-- Header -->
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td style="text-align:center;">
+                <img height="80px" src="{LOGO_HEADER}" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- Content -->
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td colspan="2"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:16px;">
+                <p style="text-transform: uppercase;">
+                    <strong>{COMPANY_NAME}</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                <p style="margin: 0px;">{COMPANY_ADDRESS_LINE_1}</p>
+                <p style="margin: 0px;">CS {COMPANY_CS}</p>
+                <p style="margin: 0px;">{COMPANY_ZIPCODE} {COMPANY_CITY} CEDEX</p>
+                <p style="margin: 0px;">Tel : {COMPANY_PHONE}</p>
+                <p style="margin: 0px;">{COMPANY_ESTIMATE_EMAIL}</p>
+                <p style="margin: 0px;">N° SIRET : {COMPANY_SIRET} / Code APE : {COMPANY_CODE_APE}</p>
+                <p style="margin: 0px;">N° de déclaration d’activité : {COMPANY_ACTIVITY_DECLARATION_NUMBER}</p>
+                <p style="margin: 0px;">Auprès de la Préfecture du Nord</p>
+            </td>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;text-align:right;">
+                <div
+                    style="border:0.5px solid #000;width: 230px;height: 130px;padding: 6px;text-align: left;float: right;">
+                    <p>{ESTIMATE_ENTITY}</p>
+                    <p>{ESTIMATE_ADDRESS_LINE1}</p>
+                    <p>{ESTIMATE_ADDRESS_LINE2}</p>
+                    <p>{ESTIMATE_POSTAL_CODE} {ESTIMATE_CITY}</p>
+                    <p>A l’attention de {ESTIMATE_CONTACT_FIRSTNAME} {ESTIMATE_CONTACT_LASTNAME}</p>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;margin-top: 20px;">
+    <tbody>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                Date : {DATE_NOW}
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                Votre contact : {ESTIMATE_WRITER_NAME} / {ESTIMATE_WRITER_EMAIL}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;background-color: #e4e1e1;margin-top: 10px;margin-bottom: 10px;">
+    <tbody>
+        <tr>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:14px;text-align: center;">
+                <strong>DEVIS N° : {ESTIMATE_NUMBER}</strong>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="ESTIMATE_ITEMS"
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;border: 1px solid black;border-collapse: collapse;">
+    <thead>
+        <tr style="border:0.5px solid #000;">
+            <th style="border:0.5px solid #000;border-collapse: collapse;">DESIGNATION</th>
+            <th style="border:0.5px solid #000;border-collapse: collapse;">QUANTITE</th>
+            <th style="border:0.5px solid #000;border-collapse: collapse;">PRIX UNITAIRE</th>
+            <th style="border:0.5px solid #000;border-collapse: collapse;">TOTAL NET</th>
+        </tr>
+    </thead>
+    <tbody>
+        {HTML_ITEMS}
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                    <strong>La facture émise ne sera pas soumise à la TVA (art. 261-7-1 du CGI)</strong></p>
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                    <strong>Tout annulation dans un délai inférieur à 10 jours ouvrés avant le début de l’action de
+                        formation entrainera la facturation de la totalité du montant.</strong></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                Date de validité : {ESTIMATE_VALID_UNTIL}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                <p>Nom et prénom : </p>
+                <p>Qualité : </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;height: 155px;vertical-align:top;">
+                <p>Date : </p>
+                <p>Signature précédée de la mention « Bon pour accord »</p>
+            </td>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                <div
+                    style="border:0.5px solid #000;width: 220px;height: 140px;padding: 6px;text-align: left;float: right;position: absolute;">
+                    <p><strong>Sylvain PEYRATOUT</strong></p>
+                    <p><strong>Directeur</strong></p>
+                    <p>
+                        <img height="70px" src="{SIGNATURE}" />
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                <p>Version : mars 2021 - {COMPANY_WEBSITE}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- CGV -->
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;page-break-before: always;">
+    <tbody>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: center;">
+                <p><strong>CONDITIONS GENERALES DE VENTE DE VENTE DE FORMATION PROFESSIONNELLE</strong></p>
+                <p><strong>{COMPANY_NAME} - {COMPANY_DENOMINATION}</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Préambule</p>
+                <p>Le Centre Régional de Formation des Professionnels de l’Enfance est l’un des centres de formation en travail social de la Région Nord – Pas-de-Calais. C’est un établissement privé, à mission de service public, géré par une association loi 1901. Le Centre Régional de Formation des Professionnels de l’Enfance accompagne la professionnalisation des acteurs de son champ d’activité, en mettant à la disposition des institutions, des professionnels et des étudiants, sa compétence en matière d’ingénierie de formation. Tout au long de ces années, nous avons su faire évoluer nos propositions de prestations en nous appuyant sur des points d’ancrage :</p>
+                <ul>
+                    <li>L’attachement à nos valeurs de références, en particulier notre volonté de promouvoir un accueil éducatif de qualité pour les enfants et leurs familles.</li>
+                    <li>Notre capacité réactive dans la prise en compte de l’évolution des réalités sociales en lien avec le milieu professionnel.</li>
+                    <li>La volonté de faire évoluer notre compétence collective : formations – veille professionnelle – implication dans des réseaux français et européens…</li>    
+                </ul>
+                <p>Nous proposons aujourd’hui des formations qualifiantes, des stages de formation d’optimisation de compétences et des prestations de conseil pour accompagner le développement des structures d’accueil petite enfance. Pour préparer l’avenir, notre projet associatif s’articule autour d’axes stratégiques :</p>
+                <ul>
+                    <li>Évaluer à l’interne nos activités pédagogiques pour poursuivre la recherche de la qualité de nos propositions et prestations.</li>
+                    <li>Développer nos collaborations avec l’université pour promouvoir les relations entre le milieu professionnel et celui de la recherche.</li>
+                    <li>Engager, soutenir l’ouverture européenne en favorisant les échanges entre formateurs et étudiants de différents pays.</li>
+                </ul>
+                <p>L’attention de l’entreprise bénéficiaire de la formation dispensée par le CRFPE (ci-après « l’Entreprise Bénéficiaire ») est attirée sur le fait que l’action de formation est strictement définie par le CRFPE quant à son périmètre, et ce au sein des fiches pédagogiques.</p>
+                      
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 1 : Objet</p>
+                <p>Les actions de formation s'adressent à toutes les catégories de personnel de l'entreprise et seront conduites par le CRFPE qui s'engage à respecter les présentes Conditions Générales de Vente.
+                    Chaque action de formation est définie par une fiche pédagogique.
+                    Toute action de formation donnera lieu à la signature d’une convention de formation ou d’un bon de commande.
+                    Les formations se dérouleront, soit dans les locaux du CRFPE, soit dans les locaux de l’Entreprise Bénéficiaire.
+                    </p>
+                 
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 2 : Caractéristiques des actions de formation délivrées par le CRFPE.</p>
+                <p>Les actions de formation s'adressent à toutes les catégories de personnel de l'entreprise et seront conduites par le CRFPE qui s'engage à respecter les présentes Conditions Générales de Vente.
+                    Chaque action de formation est définie par une fiche pédagogique.
+                    Toute action de formation donnera lieu à la signature d’une convention de formation ou d’un bon de commande.
+                    Les formations se dérouleront, soit dans les locaux du CRFPE, soit dans les locaux de l’Entreprise Bénéficiaire.
+                    </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 3 : Formations dans les locaux du CRFPE</p>
+                <p>Pour les formations se déroulant dans les locaux du CRFPE, l’Entreprise Bénéficiaire s’engage à respecter et faire respecter aux stagiaires bénéficiant des actions de formation l’ensemble des dispositions législatives et réglementaires fixant les règles d’hygiène et de sécurité applicables aux visiteurs séjournant dans les locaux de le CRFPE ainsi que les prescriptions du règlement intérieur du CRFPE en matière de règles générales et permanentes relatives à la discipline, affiché dans les locaux du CRFPE.
+                    Le règlement intérieur pourra être adressé gratuitement sur simple demande de l’Entreprise Bénéficiaire.
+                    </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 4 : Formations dans les locaux de l’Entreprise Bénéficiaire</p>
+                <p>L’Entreprise Bénéficiaire doit mettre à disposition du formateur une salle de formation qui respecte les normes d’hygiène et de sécurité en vigueur au sein de l’établissement, ainsi que le matériel nécessaire au bon déroulement de la session de formation.
+                    Lors de l’achat de chaque action de formation, le CRFPE définira la liste de ce matériel et les caractéristiques nécessaires de la salle où se déroulera la formation.
+                    </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 5 : Dispositions financières</p>
+                <p>Les modalités de règlement des actions de formation et conditions financières sont indiquées au bon de commande, conventions de formation ou accord cadre applicable à l’Entreprise Bénéficiaire.
+                    Les frais de restauration, les frais de déplacement des formateurs, ainsi que le coût de transport du matériel le cas échéant restent à la charge de l’Entreprise Bénéficiaire et lui seront facturés en sus.
+                    En contrepartie du règlement par l’Entreprise Bénéficiaire de tous les frais afférents aux actions de formation prévus aux présentes ainsi qu’aux conventions de formation ou bons de commande correspondants, le CRFPE s'engage à réaliser les actions prévues dans le cadre des fiches pédagogiques et conventions de formation ou bons de commandes, et à fournir tout document de nature à justifier la réalité et la validité des dépenses de formation.
+                    </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 6 : Pénalités de retard</p>
+                <p>Toute somme non réglée à l’échéance donnera lieu au paiement par l’Entreprise Bénéficiaire de pénalités de retard fixées à trois (3) fois le taux d’intérêt légal (L313-2 du code monétaire et financier).
+                    Ces pénalités sont exigibles de plein droit.
+                    En outre, tout retard de règlement donnera lieu au paiement par l’Entreprise Bénéficiaire d’une indemnité forfaitaire pour frais de recouvrement d’un montant de 40€ .
+                    Si les frais de recouvrement exposés sont supérieurs au montant de cette indemnité forfaitaire, le CRFPE pourra demander une indemnisation complémentaire, sur justificatifs.
+                    </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 7 : Annulation ou report</p>
+                <p>En cas d’annulation de la session de formation par l’Entreprise Bénéficiaire notifiée par écrit au CRFPE dans un délai supérieur à 10 jours avant le début de l’action de formation, celle-ci ne sera pas facturée.
+                    Cependant, le CRFPE se réserve le droit de facturer à l’Entreprise Bénéficiaire les dépenses qu'elle a effectivement engagées en vue de la réalisation de l’action de formation annulée, que l’Entreprise Bénéficiaire s’engage à régler sur présentation des justificatifs correspondants.
+                    Si l’annulation par l’Entreprise Bénéficiaire intervient dans un délai inférieur à 10 jours avant le début de l’action de formation, celle-ci sera facturée dans son intégralité.
+                    En cas de report de l’action de formation ou de son annulation du fait du CRFPE, elle s’engage à proposer à l’Entreprise Bénéficiaire une nouvelle date de formation dans le mois qui suit la date de la formation annulée.
+                    </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 8 : Droit d’auteurs</p>
+                <p>L'ensemble des documents remis à l’Entreprise Bénéficiaire et les stagiaires par le CRFPE au cours de l’action de formation sont des œuvres originales et, à ce titre, protégées par le droit de la propriété intellectuelle.
+                    En conséquence, l’Entreprise Bénéficiaire s'interdit d'utiliser, copier, transmettre et généralement d'exploiter tout ou partie de ces documents, sans l'accord préalable et écrit d'un responsable autorisé du CRFPE, et s’engage à faire respecter cette disposition par les stagiaires bénéficiant des actions de formation.
+                    </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 9 : Communication et utilisation du logo du CRFPE</p>
+                <p>L’usage du nom, et des initiales, du CRFPE, quelque soit le support de communication, devra faire l'objet, au cas par cas, d'un accord écrit préalable de sa part.</p>       
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 10 : Limitation de responsabilité</p>
+                <p>La responsabilité contractuelle du CRFPE ne peut être engagée que pour des dommages directs résultant d’une faute prouvée.
+                    En tout état de cause, en cas de mise en jeu de la responsabilité du CRFPE dans le cadre de l’exécution d’une action de formation, les parties conviennent que l'indemnité mise à la charge du CRFPE ne pourra excéder la valeur de la prestation objet de la commande.
+                    </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 11: Litiges</p>
+                <p>En cas de manquement par l’une des parties à ses engagements contractuels et en l’absence d’issue aux tentatives de règlement à l’amiable, la convention de formation sera résiliée de plein droit quinze
+                    (15) jours après mise en demeure demeurée infructueuse notifiée par la partie lésée par lettre recommandée avec avis de réception.
+                    Tout différend né entre les parties quant à l’interprétation et/ou l’exécution de la présente sera, à défaut de résolution amiable, soumis par la partie la plus diligente au Tribunal de Grande Instance de Lille.
+                    </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;text-align: justify;">
+                <p style="text-decoration: underline;">Article 12 : Droit applicable</p>
+                <p>La présente convention est soumise au droit français.</p>
+                <p>Version 2 / octobre 2020</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- FOOTER -->
+<table>
+    <tbody>
+        <tr>
+            <td style="width:4cm;"> <img width="280px" src="{LOGO_FOOTER}"> </td>
+            <td style="width:9.4cm;">
+                <p class="footer-text">{ADRESS_FOOTER}</p>
+                <p class="footer-text">Tél : {PHONE_FOOTER} • Fax : {FAX_FOOTER}</p>
+                <p class="footer-text">{EMAIL_FOOTER} • {WEBSITE_FOOTER}</p>
+                <p class="footer-text">Siret {SIRET_FOOTER}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>

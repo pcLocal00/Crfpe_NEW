@@ -1,0 +1,391 @@
+<!-- begin::Header -->
+<table>
+    <tbody>
+        <tr>
+            <td style="width:2cm;padding-right:10px;">
+                <img height="80px" src="{LOGO_HEADER}">
+            </td>
+            <td style="border:0.5px solid #000;width:14.4cm;text-align: center;">
+                <p class="header-title"><strong>{AF_TITLE}</strong></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- end::Header -->
+
+<!-- begin::Content -->
+<table style="width:18cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td width="9cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;">
+                <p style="font-size:16px;">
+                    Convention de stage entre
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:18cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;border-collapse: collapse;">
+    <tbody>
+        <tr>
+            <td width="9cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;border:0.5px solid #000;border-bottom: 0px;">
+                <p style="text-align: center;text-decoration: underline;">1. ÉTABLISSEMENT DE FORMATION</p>
+            </td>
+            <td width="9cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;border:0.5px solid #000;border-bottom: 0px;">
+                <p style="text-align: center;text-decoration: underline;">2. L’ORGANISME D’ACCUEIL</p>
+            </td>
+        </tr>
+        <tr>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: left;border:0.5px solid #000;border-top: 0px;padding-left:6px;">
+                <p>{COMPANY_DENOMINATION}</p>
+                <p>{COMPANY_NAME}</p>
+                <p>{COMPANY_ADDRESS}</p>
+                <p>{COMPANY_PHONE}</p>
+                <p>Représenté par {COMPANY_DIRECTOR}, directeur.</p>
+            </td>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: left;border:0.5px solid #000;border-top: 0px;padding-left:6px;">
+                <p>Nom : {ENTITY_NAME}</p>
+                <p>Adresse : {ENTITY_ADRESSE}</p>
+                <p>Représenté par (nom du signataire de la convention) : {REPRESENTING_CONTACT_NAME}</p>
+                <p>Qualité du représentant : {REPRESENTING_CONTACT_FUNCTION}</p>
+                <p>Service dans lequel le stage sera effectué : {SERVICE}</p>
+                <p>Tél : {ENTITY_PHONE}</p>
+                <p>Lieu du stage (si différent de l’adresse de l’organisme) : {ADRESSE}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:18cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;border-collapse: collapse;margin-top: 20px;">
+    <tbody>
+        <tr>
+            <td width="9cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: left;border:0.5px solid #000;padding-left:6px;">
+                <p style="text-align: center;text-decoration: underline;">3. LE STAGIAIRE</p>
+                <p>Nom : {MEMBER_CONTACT_LASTNAME} Prénom : {MEMBER_CONTACT_FIRSTNAME} Né(e) le
+                    {MEMBER_CONTACT_BIRTHDAY}</p>
+                <p>Adresse : {MEMBER_CONTACT_ADRESSE}</p>
+                <p>Tél : {MEMBER_CONTACT_PHONE} Email : {MEMBER_CONTACT_EMAIL}</p>
+                <p>{AF_TITLE}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:18cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;border-collapse: collapse;margin-top: 20px;">
+    <tbody>
+        <tr>
+            <td width="9cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;border:0.5px solid #000;padding-left:6px;">
+                <p style="font-size: 16px;"><strong><span style="text-decoration: underline;">Sujet de stage</span> :
+                        {SESSION_TITLE}</strong></p>
+                <p>Représentant une durée totale de {SESSION_NB_HOURS} heures {SESSION_ATTACHMENT_SEMESTER}</p>
+                <p>Du {SESSION_STARTED_AT} au {SESSION_ENDED_AT}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:18cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;border-collapse: collapse;margin-top: 20px;">
+    <tbody>
+        <tr>
+            <td width="9cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;border:0.5px solid #000;border-bottom: 0px;">
+                <p style="text-align: center;text-decoration: underline;">ENCADREMENT DU STAGIAIREPAR L’ÉTABLISSEMENT DE
+                    FORMATION</p>
+            </td>
+            <td width="9cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;border:0.5px solid #000;border-bottom: 0px;">
+                <p style="text-align: center;text-decoration: underline;">ENCADREMENT DU STAGIAIRE PAR L’ORGANISME
+                    D’ACCUEIL</p>
+            </td>
+        </tr>
+        <tr>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;border:0.5px solid #000;border-top: 0px;padding-left:6px;">
+                <p>Nom et Prénom du formateur référent : {TRAINER_REFERENT_CONTACT_NAME}</p>
+                <p>Tél : {TRAINER_REFERENT_CONTACT_PHONE}</p>
+                <p>Email : {TRAINER_REFERENT_CONTACT_EMAIL}</p>
+            </td>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;border:0.5px solid #000;border-top: 0px;padding-left:6px;">
+                <p>Nom et prénom du référent de stage : {INTERNSHIP_REFERENT_CONTACT_NAME}</p>
+                <p>Tél : {INTERNSHIP_REFERENT_CONTACT_PHONE}</p>
+                <p>Email : {INTERNSHIP_REFERENT_CONTACT_EMAIL}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:18cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;border-collapse: collapse;margin-top: 20px;">
+    <tbody>
+        <tr>
+            <td width="9.2cm" height="1.5cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: left;border:0.5px solid #000;padding-left:6px;">
+                <p>Caisse primaire d’assurance maladie à contacter en cas d’accident (lieu de domicile du stagiaire sauf
+                    exception) :</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- BEGIN::ARTICLES -->
+<p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;"><strong>Article
+        1 - Objet de la
+        formation </strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    La
+    présente convention règle les rapports de l’organisme d’accueil avec
+    l’établissement de formation et le stagiaire pendant la {SESSION_TITLE}.</p>
+<p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;"><strong>Article
+        2 - Objet de la
+        {SESSION_TITLE} </strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Le stage
+    correspond à une période temporaire de mise en situation en
+    milieu professionnel au cours de laquelle l’étudiant(e) acquiert des compétences professionnelles et
+    met en œuvre les acquis de sa formation en vue de l’obtention d’un diplôme d’état d’Educateur de
+    Jeunes Enfants.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Au cours
+    de cette période l’étudiant doit continuer à prendre
+    connaissance du champ d’activité et des missions de l’EJE afin d’atteindre les objectifs généraux
+    prévus dans le référentiel de la formation.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    {SESSION_DESCRIPTION}</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    <strong>Article 3 - Modalités de la {SESSION_TITLE} </strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    La durée
+    hebdomadaire de présence dans l’organisme d’accueil sera de 35
+    heures.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Si le
+    stagiaire doit être présent dans l’organisme d’accueil la nuit, le
+    dimanche, ou un jour férié, préciser les cas particuliers :</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    <strong>Article 4 - Accueil et encadrement du stagiaire</strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Le stagiaire est suivi par un formateur référent désigné dans la
+    présente convention. Le référent de stage désigné par l’organisme d’accueil dans la présente
+    convention est chargé d’assurer le suivi du stagiaire et d’optimiser les conditions de réalisation
+    du stage conformément aux stipulations pédagogiques définies.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Le stagiaire est autorisé à revenir dans l’établissement de formation
+    pendant la durée du stage pour y suivre des cours demandés explicitement par le programme, ou pour
+    participer à des réunions ; les dates sont portées à la connaissance de l’organisme d’accueil par le
+    centre de formation.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Au même titre, lorsque l’étudiant est de retour en centre de formation,
+    il peut être autorisé à retourner sur le site qualifiant de manière ponctuelle, et en concertation
+    avec le coordinateur de son dispositif de formationL’organisme d’accueil peut autoriser le stagiaire
+    à se déplacer.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Toute difficulté survenue dans la réalisation et déroulement du stage,
+    qu’elle soit constatée par le stagiaire ou par le référent de stage, doit être portée à la
+    connaissance du référent de l’établissement de formation afin d’être résolue au plus vite.</p>
+<p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;"><strong>Article 5 - Responsabilité et assurance</strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    L’organisme d’accueil et le stagiaire déclarent être garantis au titre
+    de la responsabilité civile.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Lorsque l’organisme d’accueil met un véhicule à la disposition du
+    stagiaire, il lui incombe de vérifier préalablement que la police d’assurance du véhicule couvre son
+    utilisation par un étudiant. Lorsque dans le cadre de son stage, l’étudiant utilise son propre
+    véhicule ou un véhicule prêté par un tiers, il déclare expressément à l’assureur dudit véhicule et,
+    le cas échéant, s’acquitte de la prime afférente.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    <strong>Article 6 - Discipline</strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Le stagiaire est soumis à la discipline et aux clauses du règlement
+    intérieur qui lui sont applicables et qui sont portées à sa connaissance avant le début du stage,
+    notamment en ce qui concerne les horaires et les règles d’hygiène et de sécurité en vigueur dans
+    l’organisme d’accueil.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Toute sanction disciplinaire ne peut être décidée que par
+    l’établissement de formation (CRFPE).Dans ce cas, l’organisme d’accueil informe le formateur
+    référent des manquements et fournit éventuellement les éléments constitutifs.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    En cas de manquement particulièrement grave à la discipline, l’organisme
+    d’accueil se réserve le droit de mettre fin au stage tout en respectant les dispositions fixées à
+    l’article 8 de la présente convention.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    <strong>Article 7 - Congés – Interruption du stage</strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    En France (sauf en cas de règles particulières applicables dans
+    certaines collectivités d’outre-mer françaises ou dans les organismes de droit public), en cas de
+    grossesse, de paternité ou d’adoption, le stagiaire bénéficie de congés et d’autorisations d’absence
+    d’une durée équivalente à celle prévues pour les salariés aux articles L.1225-16 à L.1225-28,
+    L.1225-35, L 1225-37, L.1225-46 du code du travail.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Pour toute autre interruption temporaire du stage (maladie,absence
+    injustifiée...) l’organisme d’accueil avertit le centre de
+    formation par courrier.</p>
+
+
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Toute interruption de la période de formation pratique, est signalée au
+    formateur référent. En cas d’accord des parties, un report de la fin du stage est possible afin de
+    permettre la réalisation de la durée totale du stage prévue initialement. Ce report fera l’objet
+    d’un avenant à la convention de stage. En cas de volonté d’une des trois parties (organisme
+    d’accueil, stagiaire, établissement de formation) d’arrêter le stage, celle-ci doit immédiatement en
+    informer les deux autres parties par écrit. Les raisons invoquées seront examinées en étroite
+    concertation. La décision définitive d’arrêt du stage ne sera prise qu’à l’issue de cette phase de
+    concertation.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    <strong>Article 8 - Devoir de réserve et confidentialité</strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Le devoir de réserve et de discrétion professionnelle est de rigueur
+    absolue et apprécié par l’organisme d’accueil compte tenu de ses spécialités. Le stagiaire prend
+    donc l’engagement de n’utiliser en aucun cas les informations recueillies ou obtenues par eux pour
+    en faire publication, communication à des tiers sans accord préalable de l’organisme d’accueil, y
+    compris dans le cadre des dossiers que le stagiaire doit produire. Cet engagement vaut non seulement
+    pour la durée du stage mais également après son expiration. Le stagiaire s’engage à ne conserver,
+    emporter, ou prendre copie d’aucun document ou logiciel, de quelque nature que ce soit, appartenant
+    à l’organisme d’accueil.Par ailleurs le stagiaire s’oblige à respecter le secret professionnel
+    (article 226 – 13 du code pénal) dans les services ou cette notion est de rigueur.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Dans le cadre de la confidentialité des informations contenues dans les
+    travaux de stage, l’organisme d’accueil peut demander une restriction de la diffusion du dossier,
+    voire le retrait de certains éléments confidentiels. Les personnes amenées à en prendre connaissance
+    sont contraintes par le secret professionnel à n’utiliser ni à divulguer les informations du
+    dossier.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Le non-respect avéré de ces notions de confidentialité constitue une
+    faute professionnelle et en corollaire la convocation du stagiaire devant le conseil de discipline
+    du CRFPE</p>
+
+
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    <strong>Article 9 - Propriété intellectuelle</strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Conformément au code de la propriété intellectuelle, dans le cas où les
+    activités du stagiaire donnent lieu à la création d’une œuvre protégée par le droit d’auteur ou la
+    propriété industrielle (y compris un logiciel), si l’organisme d’accueil souhaite l’utiliser et que
+    le stagiaire en est d’accord, un contrat devra être signé entre (auteur) et l’organisme d’accueil.
+</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Le contrat devra alors notamment préciser l’étendue des droits cédés,
+    l’éventuelle exclusivité, les destinations, les supports utilisés et la durée de la cession, ainsi
+    que, le cas échéant, le montant de la rémunération due au stagiaire au titre de la cession. Cette
+    clause s’applique quel que soit le statut de l’organisme d’accueil.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    <strong>Article 10 – Fin de stage –Evaluation</strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    1 - Attestation de formation pratique : à l’issue du stage, l’organisme
+    d’accueil signe une attestation mentionnant au minimum la durée effective du stage. </p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    2 - Evaluation de l’activité du stagiaire : à l’issue du stage,
+    l’organisme d’accueil renseigne une fiche d’évaluation de l’activité du stagiaire qu’il retourne au
+    formateur référent. (CF livret de formation.)</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    3 - Le tuteur de l’organisme d’accueil ou tout membre de l’organisme
+    d’accueil appelé à se rendre dans l’établissement de formation dans le cadre de la préparation, du
+    déroulement et de la validation du stage ne peut prétendre à une quelconque prise en charge ou
+    indemnisation de la part de l’établissement de formation.Cette clause s’applique quel que soit le
+    statut de l’organisme d’accueil.</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    <strong>Article 11 – Droit applicable – Tribunaux compétents</strong></p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    La présente convention est régie exclusivement par le droit français.
+</p>
+<p
+    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify;font-size:12px;">
+    Tout litige non résolu par voie amiable sera soumis à la compétence de
+    la juridiction française compétente.</p>
+
+
+
+
+<!-- END::ARTICLES -->
+<table>
+    <tbody>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                <p>Fait à {LIEU}, le {DATE_NOW}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="width:18cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td width="7cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;height: 155px;vertical-align:top;">
+                <p><strong>La Direction de l’organisme de stage, </strong></p>
+                <p>{REPRESENTING_CONTACT_NAME}</p>
+            </td>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;height: 155px;vertical-align:top;">
+                <p><strong>Le stagiaire, </strong></p>
+                <p>{MEMBER_CONTACT_LASTNAME} {MEMBER_CONTACT_FIRSTNAME}</p>
+            </td>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                <div style="width: 220px;height: 140px;padding: 6px;text-align: left;float: right;position: absolute;">
+                    <p><strong>Le Directeur du Centre de</strong></p>
+                    <p><strong>{COMPANY_DIRECTOR}</strong></p>
+                    <p>
+                        <img height="70px" src="{SIGNATURE}" />
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="width:18cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td width="12cm"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;height: 155px;vertical-align:top;">
+                <p><strong>Le référent de stage, </strong></p>
+                <p>{INTERNSHIP_REFERENT_CONTACT_NAME}</p>
+            </td>
+            <!-- <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;height: 155px;vertical-align:top;">
+                <p><strong>Le formateur référent, </strong></p>
+                <p>{TRAINER_REFERENT_CONTACT_NAME}</p>
+            </td> -->
+        </tr>
+    </tbody>
+</table>
+<!-- end::Content -->

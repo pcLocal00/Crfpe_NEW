@@ -1,0 +1,17 @@
+td.details-control::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0da";
+    cursor: pointer;
+    color: #3699ff;
+}
+
+tr.shown td.details-control::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0d7";
+    color: #3699ff;
+}
+.light-primary{
+    background-color: #e1f0ff !important;  
+}

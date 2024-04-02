@@ -1,0 +1,163 @@
+<!-- Header -->
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td style="text-align:center;">
+                <img height="80px" src="{LOGO_HEADER}" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- Content -->
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+    <tbody>
+        <tr>
+            <td colspan="2"
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:16px;">
+                <p style="text-transform: uppercase;">
+                    <strong>{COMPANY_NAME}</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                <p style="margin: 0px;">{COMPANY_ADDRESS_LINE_1}</p>
+                <p style="margin: 0px;">CS {COMPANY_CS}</p>
+                <p style="margin: 0px;">{COMPANY_ZIPCODE} {COMPANY_CITY} CEDEX</p>
+                <p style="margin: 0px;">Tel : {COMPANY_PHONE}</p>
+                <p style="margin: 0px;">{COMPANY_INVOICE_EMAIL}</p>
+                <p style="margin: 0px;">N° SIRET : {COMPANY_SIRET} / Code APE : {COMPANY_CODE_APE}</p>
+                <p style="margin: 0px;">N° de déclaration d’activité : {COMPANY_ACTIVITY_DECLARATION_NUMBER}</p>
+                <p style="margin: 0px;">Auprès de la Préfecture du Nord</p>
+            </td>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;text-align:right;">
+                <div
+                    style="border:0.5px solid #000;width: 230px;height: 160px;padding: 6px;text-align: left;float: right;">
+                    <p style="font-size:12px;margin: 0px;">A l’attention de {INVOICE_CONTACT_FIRSTNAME} {INVOICE_CONTACT_LASTNAME}</p>
+                    <p style="font-size:12px;margin: 0px;">{INVOICE_ENTITY}</p>
+                    <p style="font-size:12px;margin: 0px;">{INVOICE_ADDRESS_LINE1}</p>
+                    <p style="font-size:12px;margin: 0px;">{INVOICE_ADDRESS_LINE2}</p>
+                    <p style="font-size:12px;margin: 0px;">{INVOICE_POSTAL_CODE} {INVOICE_CITY}</p>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;margin-top: 20px;">
+    <tbody>
+        <tr>
+            <td style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                
+                <p style="margin: 0px;">Date : {DATE_NOW}</p>
+                <p style="margin: 0px;">Votre contact : {INVOICE_WRITER_NAME} / {INVOICE_WRITER_EMAIL}</p>
+                <p style="margin: 0px;">{INVOICE_SIRET_CLIENT}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;background-color: #e4e1e1;margin-top: 10px;margin-bottom: 10px;">
+    <tbody>
+        <tr>
+            <td
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:14px;text-align: center;">
+                <strong>FACTURE N° : {INVOICE_NUMBER}</strong>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">{INVOICE_NOTE}</p>
+<table id="INVOICE_ITEMS"
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;border: 1px solid black;border-collapse: collapse;">
+    <thead>
+        <tr style="border:0.5px solid #000;">
+            <th style="border:0.5px solid #000;border-collapse: collapse;">DESIGNATION</th>
+            <th style="border:0.5px solid #000;border-collapse: collapse;">QUANTITE</th>
+            <th style="border:0.5px solid #000;border-collapse: collapse;">PRIX UNITAIRE</th>
+            <th style="border:0.5px solid #000;border-collapse: collapse;">TOTAL NET</th>
+        </tr>
+    </thead>
+    <tbody>
+        {HTML_ITEMS}
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:12px;">
+                    <strong>La facture émise ne sera pas soumise à la TVA (art. 261-7-1 du CGI)</strong>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table 
+    style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:10px;">
+    <tbody>
+        <tr>
+            <td>
+                <table style="width:8cm;border-collapse: collapse;">
+                    <tbody>
+                        <tr>
+                            <td style="border:1px solid #000;padding: 2px;">
+                                <p style="margin: 0px;">Condition de règlement</p>
+                            </td>
+                            <td style="border:1px solid #000;padding: 2px;">
+                                <p style="margin: 0px;">Par chèque ou virement</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid #000;padding: 2px;">
+                                <p style="margin: 0px;">Date de règlement</p>
+                            </td>
+                            <td style="border:1px solid #000;padding: 2px;">
+                                <p style="margin: 0px;">Dès réception à 30 jours nets</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid #000;padding: 2px;" colspan="2">
+                                <p style="margin: 0px;">Nos références bancaires :</p>
+                                <p style="margin: 0px;">RIB Société Générale : {company_bank_code} {company_bank_guichet}
+                                    {company_bank_account_number} {company_bank_key_rib}</p>
+                                <p style="margin: 0px;">IBAN : {company_bank_iban}</p>
+                                <p style="margin: 0px;">BIC : {company_bank_bic}</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td align="center" style="border:1px solid #000;width:8cm;">
+                <p style="color: #89383e;">Référence à rappeler sur votre règlement (au dos de chaque chèque) et
+                    pour toute correspondance : <strong>{INVOICE_NUMBER}</strong></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:9px;">Pénalités de retard</p>
+<p style="width:16.8cm;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:9px;text-align: justify;">Toute somme non payée à l'échéance donnera lieu au paiement par le bénéficiaire de pénatités de retard fixées à trois (3) fois le taux d'intérêt légal (L313-2 du code monétaire et financier). Ces pénalités sont exigibles de plein droit. En outre, tout retard de règlement donnera lieu au paiement par le bénéficiaire d'une indemnité forfaitaire pour frais de recouvrement d'un montant de 40 (quarante) euros. Si les frais de recouvrement exposés sont supérieurs au montant de cette indemnité forfaitaire, le CRFPE pourra demander une indemnisation complémentaire, sur iustificatifs. « Pas d 'escompte en cas de paiement anticipé ››</p>
+
+
+
+<!-- FOOTER -->
+<table>
+    <tbody>
+        <tr>
+            <td style="width:4cm;"> <img width="280px" src="{LOGO_FOOTER}"> </td>
+            <td style="width:9.4cm;">
+                <p class="footer-text">{ADRESS_FOOTER}</p>
+                <p class="footer-text">Tél : {PHONE_FOOTER} • Fax : {FAX_FOOTER}</p>
+                <p class="footer-text">{EMAIL_FOOTER} • {WEBSITE_FOOTER}</p>
+                <p class="footer-text">Siret {SIRET_FOOTER}</p>
+                <p class="footer-text">Version : mars 2021</p>
+            </td>
+        </tr>
+    </tbody>
+</table>

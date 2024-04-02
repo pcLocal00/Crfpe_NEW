@@ -1,0 +1,19 @@
+/node_modules
+/storage/*.key
+/vendor
+/config/database.php
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+composer.lock
+
+# /public/emails_templates
+/public/temp_pdf
+/public/temp_zip
+/public/uploads
+/public/temp_sage
+/public/file_sign/*
